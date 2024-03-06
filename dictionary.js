@@ -3,13 +3,12 @@ let dictionary = {};
 //save word
 document.getElementById(`save`).onclick = function() {
     let newWord = document.getElementById(`word`).value.trim().toLowerCase();
-    if (newWord !== ''){
+    if (newWord !== '') {
         dictionary[newWord] = true;  
-        //window.alert('The new word has been successfully saved!✔')
+        //window.alert('The new word has been successfully saved!✔');
         document.getElementById('word').value = '';
     } else {
-        window.alert('Please enter a valid text!!')
-
+        window.alert('Please enter a valid text!!');
     }
     console.log(dictionary);
 }
@@ -25,6 +24,6 @@ document.getElementById(`search`).onclick = function() {
         }
         document.getElementById('word').value = '';
     } else {
-        window.alert('Insert a word to search for')
+        window.alert('Insert a word to search for');
     }
 }
